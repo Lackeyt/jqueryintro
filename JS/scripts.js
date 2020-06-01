@@ -1,6 +1,6 @@
 const orgString = prompt("Enter a Sentence");
 
-//console.log(orgString);
+console.log(orgString);
 
 const newString1 = function(orgString) {
   return orgString.charAt(0).toUpperCase() + orgString.charAt(orgString.length-1).toUpperCase();
@@ -18,8 +18,15 @@ const newString4 = function(orgString, newString3) {
   return orgString.charAt(Math.floor(orgString.length/2)) + newString3;
 };
 
+jQuery(document).ready(function(){
+  jQuery(".img1").click(function() {
+    alert(orgString);
+  });
 
-alert(newString4(orgString, newString3(orgString, newString2(newString1))));
+  jQuery(".img2").click(function() {
+    alert(newString4(orgString, newString3(orgString, newString2(newString1))));
+  });
+});
 
 
 
