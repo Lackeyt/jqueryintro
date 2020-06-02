@@ -7,7 +7,7 @@ const newString1 = function(orgString) {
 };
 
 const newString2 = function(newString1) {
-  return newString1(orgString).charAt(newString1(orgString).length-1) + newString1(orgString).charAt(0);
+  return newString1(orgString).charAt(1) + newString1(orgString).charAt(0);
 };
 
 const newString3 = function(orgString, newString2) {
